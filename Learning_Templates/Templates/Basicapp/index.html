@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "Basicapp/base.html" %}
+
+{% block content %}
+    <div class="container">
+        <h1>Welcome to Index page</h1>
+        <h1>{{text|upper}}</h1>
+        <h2>{{number|add:"100"}}</h2>
+
+        <h1>Using cut</h1>
+        <h1>{{text|cut:'index '}}</h1>
+        <h2>{{number|add:"100"}}</h2>
+
+    </div>
+{% endblock %}

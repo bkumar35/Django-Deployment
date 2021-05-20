@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+{% extends 'Basicapp/base.html' %}
+{% block content %}
+<h1>Welcome to relative Templates Page</h1>
+    <a href="{% url 'Basicapp:other' %}"> Other Page </a>
+    <a href="{% url 'admin:index' %}">Link To Admin</a>
+    <a href="{% url 'Basicapp:index' %}">Link To Index!</a>
+{% endblock %}
